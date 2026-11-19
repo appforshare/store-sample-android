@@ -16,3 +16,5 @@ Pushing a tag that starts with `v` runs `.github/workflows/appforshare-store.yml
 workflow. This sample sends its builds to the AppForShare staging server.
 
 License: MIT.
+
+Tag v1.0.1 keeps versionCode 1 on purpose: it checks that AppForShare refuses a build whose versionCode did not go up.
