@@ -1,0 +1,21 @@
+name: AppForShare store build
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+jobs:
+  store:
+    permissions:
+      contents: read
+      id-token: write
+      attestations: write
+    uses: appforshare/store-build/.github/workflows/build.yml@v1
+    with:
+      listing: '1'
+      package: io.appforshare.storesample
+      module: 'app'
+      flavor: ''
+      build-type: 'release'
+      # This sample sends its builds to the AppForShare staging server (staff testing).
+      staging: true

@@ -1,0 +1,2 @@
+# Proves to AppForShare that this repository controls the package name.
+io.appforshare.storesample afs-449d0a682a54e881e62b478583549de3
